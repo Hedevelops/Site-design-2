@@ -1,75 +1,246 @@
-body{margin:0; padding:0; box-sizing:border-box; overflow: hidden;}
 
-.nav{height:100px;
-    position: relative;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap:80px;
-     
-}
-
-.nav ul{
-    display:flex;
-    list-style-type: none;
     
-}
+    .dropdown-toggle::after {
+      display: none !important;
+    }
 
-.nav ul li a{
-    text-decoration: none;
-    margin:1rem;
-}
-.nav h2{margin-left:20px}
+    .nav-link {
+      color: black !important;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .d-flex .btn.btn-outline-success.navbtn {
+      background-color: green;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      padding: 10px 20px;
+    }
+
+    .topbg {
+      background: url(https://images.pexels.com/photos/8721318/pexels-photo-8721318.jpeg);
+      padding: 80px;
+      height: 80vh;
+      width: 100%;
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+      position: relative;
+    }
+    .bnr{padding-top:50px;}
+
+    .wave {
+
+      background: url(Images/wave.svg);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 30%;
+      background-repeat: no-repeat;
+      background-size: 167%;
+      width: 100%;
+      background-position-x: 68%;
+      background-position-y: 40%;
+
+    }
+
+    h2 {
+      color: white;
+      font-size: 40px;
+    }
+
+    p {
+      color: white;
+      font-size: 10px;
+    }
+
+    .btns #b1,
+    #b2 {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 2px;
+    }
+
+    #b1 {
+      background-image: linear-gradient(to right, rgb(0 0 172), rgb(78 65 147));
+      color: white;
+    }
+
+    #b2 {
+      color: black;
+      background-color: white;
+    }
 
 
-.top{
-    background-image:url(https://images.pexels.com/photos/8721318/pexels-photo-8721318.jpeg);
-    width:100vw;
-    height:1000px;
-    background-position:center;
-    background-size:cover;
+    .middle {
+      height: 100%;
+      width: 100%;
+      background-color: #f4f4f4;
+      padding-top: 60px !important;
+    }
 
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color:white
-}
-
-.top h2{
-    font-size:4rem;
-    text-align: center;
-}
-
-.top p{
-    text-align: center;
-}
-
-.top #b1 , #b2{
-    width:21rem;
-    padding:2rem;
-    border:none;
-    margin:2rem;
-    
-    font-size: 1.5rem;
-
-}
-.top #b2{
-    color: rgb(25, 86, 218);
-}
-
-.top .btns #b1{
-
-    background-image: linear-gradient( 90deg, rgb(5, 48, 166), rgb(25, 86, 218));
-    border:none;
-    color:white;
-
-}
+    .bottom {
+      height: 100%;
+      width: 100%;
+      background-color: #f4f4f4;
 
 
-.bottom{
-    background-color: white;
-    height:1000px;
-    width:100vw;
-}
+    }
 
+    .social {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social h3 {
+      font-size: 45px;
+    }
+
+
+
+
+    a {
+      color: grey;
+      text-decoration: none;
+    }
+
+    i {
+      letter-spacing: 10px;
+      padding: 2cm 0cm 1cm 0cm;
+      font-size: 49px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    i:hover {
+      transform: scale(1.3);
+    }
+
+    .fa-github:hover {
+      color: #333;
+    }
+
+    .fa-facebook:hover {
+      color: #1877f2;
+    }
+
+    .fa-instagram:hover {
+      color: #c32aa3;
+    }
+
+    .fa-twitter:hover {
+      color: #1da1f2;
+    }
+
+    .fa-linkedin-in:hover {
+      color: #0a66c2;
+    }
+
+    .fa-youtube:hover {
+      color: #ff0000;
+    }
+
+    .read {
+      background-image: linear-gradient(to right, rgb(0 0 172), rgb(78 65 147));
+      color: white;
+      padding: 10px 20px;
+      border: none;
+
+    }
+
+    .about {
+      font-size: 30px;
+      color: black;
+    }
+
+    .para {
+      color: black;
+    }
+
+    @media only screen and (min-width:768px) and (max-width:1024px) {
+
+      .wave {
+
+        background: url(Images/wave.svg);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 25%;
+        background-repeat: no-repeat;
+        background-size: 145%;
+        width: 100%;
+        background-position-x: 63%;
+        background-position-y: 30%;
+      }
+    }
+
+    @media only screen and (min-width:425px) and (max-width:768px) {
+
+      .topbg {
+
+        height: inherit !important;
+
+        background: url(https://images.pexels.com/photos/8721318/pexels-photo-8721318.jpeg);
+        padding: 80px;
+        height: 80vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+
+      }
+
+      .wave {
+
+        background: url(Images/wave.svg);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 15%;
+        background-size: 150%;
+        width: 100%;
+        background-position-x: 66%;
+        background-position-y: 30%;
+        background-repeat: no-repeat;
+      }
+
+    }
+
+    @media only screen and (min-width:375px) and (max-width:425px) {
+
+      .topbg {
+
+        height: inherit !important;
+
+
+
+        background: url(https://images.pexels.com/photos/8721318/pexels-photo-8721318.jpeg);
+        padding: 80px;
+        height: 80vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+
+      }
+
+      .wave {
+        
+        background: url(Images/wave.svg);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 9%;
+        background-repeat: no-repeat;
+        background-size: 195%;
+        width: 100%;
+        background-position: center;
+        background-position-x: 63%;
+        background-position-y: 43%;
+      }
+    }
